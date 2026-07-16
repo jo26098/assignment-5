@@ -13,11 +13,11 @@ def find_median(num_list):
     half_length = int(len(num_list) / 2)
     print(half_length)
     if len(num_list) % 2 == 0:
-        median = int(sorted_list[half_length])
-    else:
         med1 = sorted_list[half_length]
         med2 = sorted_list[half_length + 1]
         median = (med2 + med1) / 2
+    else:
+        median = int(sorted_list[half_length])
     return(median)
 
 
